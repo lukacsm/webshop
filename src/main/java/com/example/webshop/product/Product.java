@@ -2,13 +2,13 @@ package com.example.webshop.product;
 
 public class Product {
 
-    private int it;
+    private int id;
     private String name;
     private Double price;
     private String desc;
 
-    public Product(int it, String name, Double price, String desc) {
-        this.it = it;
+    public Product(int id, String name, Double price, String desc) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.desc = desc;
@@ -20,8 +20,8 @@ public class Product {
         this.desc = desc;
     }
 
-    public int getIt() {
-        return it;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -36,8 +36,8 @@ public class Product {
         return desc;
     }
 
-    public void setIt(int it) {
-        this.it = it;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setName(String name) {
@@ -55,7 +55,7 @@ public class Product {
     @Override
     public String   toString() {
         return "Product{" +
-                "it=" + it +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", desc='" + desc + '\'' +
